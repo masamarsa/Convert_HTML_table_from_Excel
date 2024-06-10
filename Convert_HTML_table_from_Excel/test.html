@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Excelの表をHTMLのtableに変換</title>
+	<link rel="stylesheet" href="./CSS/style.css">
+	<script src="./JavaScript/convertHTMLTableFromExcel.js"></script>
+</head>
+
+<body>
+	<div>
+		<h2>表（テーブル）からCSVまたはJSONに変換</h2>
+		<div>
+			<span lang="jp">縦</span><span lang="en"> : </span>
+			<input type="number" id="number_spinner_rows" value="5" min="1" max="50" step="1">
+			<span lang="jp">横</span><span lang="en"> : </span>
+			<input type="number" id="number_spinner_cells" value="3" min="1" max="50" step="1">
+		</div>
+		<table id="table_edit">
+			<tbody>
+				<tr>
+					<td>001</td>
+					<td>山田　吉郎</td>
+					<td>03-1234-5678</td>
+				</tr>
+				<tr>
+					<td>002</td>
+					<td>山田　二郎</td>
+					<td>03-2234-5678</td>
+				</tr>
+				<tr>
+					<td>003</td>
+					<td>山田　三郎</td>
+					<td>03-3234-5678</td>
+				</tr>
+				<tr>
+					<td>004</td>
+					<td>山田　四郎</td>
+					<td>03-4234-5678</td>
+				</tr>
+				<tr>
+					<td>005</td>
+					<td>山田　五郎</td>
+					<td>03-5234-5678</td>
+				</tr>
+			</tbody>
+		</table>
+		<div>
+			<button id="csv_button">CSV</button>
+			<button id="json_button">JSON</button>
+		</div>
+		<textarea id="data"></textarea>
+	</div>
+	<div>
+		<h2>TSVからHTMLソースに変換</h2>
+		<textarea id="dataIn"></textarea>
+		<div>
+			<nobr>変換 : </nobr>
+			<button id="html_button">HTML</button>
+		</div>
+		<textarea id="dataOut"></textarea>
+	</div>
+</body>
+
+</html>

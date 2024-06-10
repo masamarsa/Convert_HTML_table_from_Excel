@@ -1,0 +1,18 @@
+/* table style */
+#table_edit {
+    border-collapse: collapse;
+}
+
+#table_edit td {
+    border: 1px solid lightgray;
+}
+
+td {
+    height: 20pt;
+    width: auto;
+}
+
+textarea {
+    height: 8em;
+    width: 100%;
+}
